@@ -158,7 +158,7 @@ html {
 
 .instruction {
   background-color: lightsalmon;
-  border-radius: 1.2rem;
+  /* box-shadow: 1px 1px 1px 2px #000; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,13 +188,13 @@ html {
 
 .form-box {
   background-color: lightsalmon;
-  border-radius: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   justify-content: center;
   padding: 1.2rem;
   height: 63rem;
+  /* box-shadow: 1px 1px 1px 2px #000; */
 }
 
 .form-box h1 {
@@ -250,48 +250,69 @@ input[type="submit"]:active {
 .memeUI {
   grid-row: 1 / 3;
   padding: 0.5rem;
+  /* overflow: hidden; */
 }
 
 .meme-box {
   /* border: 1px solid #6d2c1c; */
-  border-radius: 1.4rem;
-  padding: 1rem;
+  padding: 0.5rem;
   height: 63rem;
   box-shadow: 1px 1px 1px 2px #000;
 }
 
 .meme-image {
-  width: 28rem;
-  height: 28rem;
-  box-shadow: 1px 1px 2px 2px #000;
-  margin: 1rem;
+  width: 27rem;
+  height: 27rem;
+  /* box-shadow: 1px 1px 1px #000; */
+  margin: 1.4rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
+  text-align: center;
+  transition: all 1s;
+  box-shadow: 1px 1px 2px #000;
+}
+
+.meme-image:hover {
+  transform: scale(1.1);
+  z-index: 99;
 }
 
 .p-1,
 .p-2 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
   text-shadow: 2px 2px 2px #000;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #eee;
+  color: #da5533;
   position: absolute;
-  display: inline-block;
+  letter-spacing: 0.4rem;
 }
 
 .p-1 {
-  transform: translate(50% 50%);
-  top: 2rem;
-  left: 15%;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 50%;
+}
+.p-2 {
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
 }
 
-.p-2 {
-  transform: translate(50% 50%);
-  top: 22rem;
-  left: 15%;
+.close-btn {
+  border: none;
+  position: absolute;
+  top: 1rem;
+  left: 85%;
+  cursor: pointer;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  stroke: red;
 }
