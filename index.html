@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="clipped-background">
+      <div class="container">
+        <h1 class="heading">
+          <span class="text1">Create your meme</span
+          ><span class="text2">Less than one minute</span>
+        </h1>
+        <a href="#" class="btn btn-animated">Start here</a>
+      </div>
+    </header>
+
+    <main class="meme-section">
+      <div class="instruction-box">
+        <div class="instruction">
+          <h1>Instructions</h1>
+          <p>
+            Enter the image URL in the first bar and then type the upper phrase
+            and lower phrase in the second and third bar. Finally, just press
+            submit to see your meme! Click the button on top to close.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            quia aperiam facere pariatur? Excepturi sed explicabo debitis dicta
+            quam velit inventore non. Alias harum laborum praesentium quaerat
+            ullam molestiae accusantium voluptates.
+          </p>
+          <p>
+            Laboriosam, incidunt sunt dicta architecto, veritatis corporis quae
+            deserunt in exercitationem, ut culpa asperiores. Unde sapiente
+            expedita repellendus earum velit autem cupiditate praesentium.
+          </p>
+        </div>
+      </div>
+      <div class="meme-generator">
+        <div class="form-box">
+          <h1>Meme generator</h1>
+          <form class="meme-form" action="" method="">
+            <div class="input-container">
+              <label for="URL"> Image URL:</label>
+              <input type="text" id="URL" minlength="2" />
+            </div>
+
+            <div class="input-container">
+              <label for="upperText">First phrase:</label>
+              <input type="text" id="upperText" minlength="2" />
+            </div>
+
+            <div class="input-container">
+              <label for="lowerText">Lower phrase:</label>
+              <input type="text" id="lowerText" />
+            </div>
+
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+      <div class="memeUI">
+        <div class="meme-box"></div>
+      </div>
+    </main>
+  </body>
+</html>
